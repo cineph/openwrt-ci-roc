@@ -7,7 +7,7 @@ on:
     - cron: 0 20 * * 5  # 北京时间星期六凌晨4点，定时触发
 
 env:
-  REPO_URL: https://github.com/laipeng668/immortalwrt.git
+  REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
   REPO_BRANCH: master
   CONFIG_FILE: configs/Arthur.NoWiFi.config
   DIY_SCRIPT: scripts/Roc-script.sh
@@ -19,7 +19,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Check Server Performance(检查服务器性能)
